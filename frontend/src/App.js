@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Home from './Home'
 import './App.css';
 
 
@@ -11,8 +12,9 @@ function App() {
 
   return (
     <div className="App">
+      <Home />
       <header className="App-header">
-        <button onClick={apiCall}> Make API Call </button>
+        <button className="DefaultBtn" onClick={apiCall}> Make API Call </button>
       </header>
     </div>
   );

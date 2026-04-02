@@ -1,0 +1,196 @@
+.GradientBG {
+  background: radial-gradient(circle, rgb(245, 161, 245) 2%, rgb(36, 14, 46) 100%);
+}
+
+.Overlay {
+  background-color: black;
+  opacity: 100%;
+}
+
+/* #root{
+	height: 100vh;
+} */
+body {
+  /* display: grid;
+  grid-template-columns: 1fr; */
+  font-family: Arial, sans-serif;
+  /*grid-template-columns:
+      2  1fr
+     /* 1 * auto
+     /* 2 * 1fr;
+   	grid-template-rows:
+     /* 3 * auto
+     /* 4 * 1fr
+     /* 5 * auto;*/
+  background-color: #909090;
+}
+
+h1 {
+  font-size: 40px;
+  color: white;
+}
+
+h2 {
+  font-size: 32px;
+  color: white;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+h4 {
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+p {
+  font-size: 12px;
+}
+
+a {
+  color: #202020;
+  margin-right: 5px;
+}
+
+.DefaultBtn {
+  grid-column: auto/span 1;
+  padding: 5px;
+  height: 48px;
+  min-width: 48px;
+  font-size: 12px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1.5px solid #202020;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.DefaultBtn:active {
+  color: #202020;
+  border: 1.5px solid #202020;
+  background-color: #606060;
+}
+
+.PopUp {
+  /*display: grid;
+  	grid-template-columns: subgrid;
+  grid-gap: 10px;
+   	grid-column: auto / span 3; */
+  background-color: #606060;
+  padding: 8px;
+  border-radius: 15px;
+  width: 50%;
+}
+
+.Row_10 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  flex-basis: 100%;
+}
+
+.Box_10 {
+  flex-basis: 100%;
+}
+
+.Box_9 {
+  flex-basis: 90%;
+}
+
+.Box_8 {
+  flex-basis: 80%;
+}
+
+.Box_6 {
+  flex-basis: 60%;
+}
+
+.Box_5 {
+  flex-basis: 49%;
+  flex-shrink: 2;
+}
+
+.Box_4 {
+  flex-basis: 40%;
+}
+
+.Box_3 {
+  flex-basis: 30%;
+}
+
+.Box_2 {
+  flex-basis: 2%;
+}
+
+.Box_1 {
+  flex-basis: 9%;
+  flex-shrink: 1;
+}
+
+.grid-sixth {
+  grid-column: auto/span 1;
+}
+
+.grid-third {
+  grid-column: auto/span 2;
+}
+
+.grid-two-thirds {
+  grid-column: auto/span 4;
+}
+
+.grid-half {
+  grid-column: auto/span 3;
+}
+
+@media (min-width: 40em) {
+  /* The grid system goes here... */
+  .grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-column-gap: 0.75px;
+    grid-row-gap: 0.45px;
+  }
+  /* .div1 { grid-area: 2 / 3 / 3 / 4; }
+  	.div2 { grid-area: 2 / 4 / 3 / 5; }
+  	.div3 { grid-area: 1 / 6 / 2 / 7; }
+  	.div4 { grid-area: 3 / 6 / 4 / 7; }
+  	.div5 { grid-area: 3 / 5 / 4 / 6; } */
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-column-gap: 0.75px;
+    grid-row-gap: 0.45px;
+  }
+  .grid-top-right {
+    grid-area: 1/3/2/4;
+    place-self: center;
+  }
+  .grid-center {
+    grid-area: 2/2/3/3;
+    align-self: center;
+  }
+  .grid-bottom-center {
+    grid-area: 3/2/4/3;
+    place-self: center;
+  }
+  .grid-top-left {
+    grid-area: 1/1/2/2;
+    place-self: center stretch;
+  }
+  /* 	.row {
+  		display: grid;
+  	grid-template-columns: repeat(6, 1fr);
+  	grid-template-rows: repeat(1, 1fr 1fr 1fr);
+  	column-gap: 0.75em;
+  	} */
+}/*# sourceMappingURL=style.css.map */

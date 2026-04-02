@@ -1,0 +1,46 @@
+.Row_10{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	//align-items: stretch;
+	gap: 10px;
+	//flex-wrap: wrap;
+	flex-basis: 100%;
+}
+.Box_10{
+	flex-basis: 100%; //these values will be changed
+	//flex-grow: 6;
+}
+.Box_9{
+	flex-basis: 90%; //these values will be changed
+	//flex-grow: 6;
+}
+.Box_8{
+	flex-basis: 80%; //these values will be changed
+	//flex-grow: 6;
+}
+.Box_6{
+	flex-basis: 60%; //these values will be changed
+	//flex-grow: 6;
+}
+.Box_5{
+	flex-basis: 49%;
+	//flex-grow: 5;
+	flex-shrink: 2;
+}
+.Box_4{
+	flex-basis: 40%;
+	//flex-grow: 4;
+}
+.Box_3{
+	flex-basis: 30%;
+	//flex-grow: 3;
+}
+.Box_2{
+	flex-basis: 2%;
+	//flex-grow: 2;
+}
+.Box_1{
+	flex-basis: 9%;
+	flex-shrink: 1;
+}

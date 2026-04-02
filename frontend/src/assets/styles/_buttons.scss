@@ -1,0 +1,20 @@
+@use 'base';
+
+.DefaultBtn{
+	//width: 100%;
+	grid-column: auto / span 1;
+	padding: 5px;
+	height: 48px;
+	min-width: 48px;
+	font-size : 12px;
+	margin: 5px;
+	border-radius: 5px;
+	border: 1.5px solid base.$secondary-color;
+	background-color: base.$glass-bg;
+}
+.DefaultBtn:active{
+	color: base.$secondary-color;
+	border: 1.5px solid base.$secondary-color;
+	background-color: base.$primary-color;
+}
+
