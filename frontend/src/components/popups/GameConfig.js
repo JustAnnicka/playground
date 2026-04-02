@@ -2,15 +2,10 @@
 //The component is a subgrid of 6 (row one 5/1, row two 3/3, row three 6, row four 3/3)
 //Decide weather we use Grid or Flexbox
 //import slider components
-import DefaultBtn from "../buttons/DefaultBtn"
-
+//import DefaultBtn from "../buttons/DefaultBtn"
 export default function GameConfig(){
 	return (
-			<div className="PopUp">
-				<div className="Row_10">
-					<div className=""><h3>Start new game</h3></div> 
-					<div className=""><button className="DefaultBtn ">X</button></div> 
-				</div>
+			<div>
 		
 				<h4>Opponent</h4>
 				<div className="Row_10">

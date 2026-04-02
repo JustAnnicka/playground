@@ -12,8 +12,14 @@
 
 	//background-color: base.$glass-bg;
 	background-color: base.$primary-color;
-
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
 	padding: 8px;
 	border-radius: 15px;
-	width: 50%; // on mobile 100% on desktop 33% (mid scale 50%)
-}
+	//width: 50%; // on mobile 100% on desktop 33% (mid scale 50%)
+	max-width: 50%;
+	margin: auto;
+	left: 20%;
+	top: 20%;
+	}
