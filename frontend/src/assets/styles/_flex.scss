@@ -1,7 +1,20 @@
+.flexColumn{
+	display: flex;
+	flex-direction: column;
+	justify-content:space-between;
+	height: 85%;
+}
+.headerPopup{
+	display: flex;
+	flex-direction: row;
+	place-content: space-between;
+	align-items: flex-start;
+}
+
 .Row_10{
 	display: flex;
 	flex-direction: row;
-	justify-content:space-between;
+	//justify-content:space-between;
 	//align-items: stretch;
 	gap: 10px;
 	//flex-wrap: wrap;
@@ -24,9 +37,9 @@
 	//flex-grow: 6;
 }
 .Box_5{
-	flex-basis: 49%;
+//	flex-basis: 49%;
 	//flex-grow: 5;
-	flex-shrink: 2;
+	//flex-shrink: 2;
 }
 .Box_4{
 	flex-basis: 40%;

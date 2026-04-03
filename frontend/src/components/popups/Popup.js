@@ -5,14 +5,14 @@
 function PopUp({showPopUp, closePopUp, children, title}){
   if (!showPopUp) {return null}
   return (
-    <div className="PopUp" >
-		<div className="Row_10">
+    <form className="PopUp" >
+		<div className="headerPopup">
 			<h3> {title}</h3>
-        	<button className="DefaultBtn" onClick={closePopUp}>X</button>
+        	<button className="ClosePopupBtn" onClick={closePopUp}>X</button>
 		</div>
         {children}
 		
-    </div>
+    </form>
   );
 };
 

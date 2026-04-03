@@ -1,25 +1,46 @@
 @use 'base';
 
-.PopUp{
-	/*display: grid;
- 	grid-template-columns: subgrid;
-	grid-gap: 10px;
-  	grid-column: auto / span 3; */
-	//display: flex;
-	//flex-direction: column;
-	//flex-flow: column wrap;
-	//align-items: stretch;
-
-	//background-color: base.$glass-bg;
-	background-color: base.$primary-color;
-	display: flex;
-	flex-direction: column;
-	justify-content:space-between;
-	padding: 8px;
-	border-radius: 15px;
-	//width: 50%; // on mobile 100% on desktop 33% (mid scale 50%)
-	max-width: 50%;
-	margin: auto;
-	left: 20%;
-	top: 20%;
+@media (min-width: 200px) {
+	.PopUp{
+		width: 80%;
+		height: 70vh;
+		position:absolute;
+		left: 8%;
+		top: 15%;
+		background-color: base.$primary-color;
+		padding: 8px;
+		border-radius: 15px;
+		margin: auto;
+		overflow: scroll;
 	}
+
+	input{
+		height: 20px;
+		margin-top: 4px;
+		margin-bottom:16px;
+		background-color: base.$bg-color;
+	}
+	input[type="range"]{
+		width: 100%;
+
+		margin-bottom: 8px;
+	}
+
+	.sliderLabels{
+		display: flex;
+		place-content: space-between;
+		padding-left: 6px;
+		padding-right: 6px;
+	}
+
+
+
+}
+@media (min-width: 30em) {
+	.PopUp{
+		max-width: 50%;
+		min-width: 30%;
+		left: 30%;
+		top: 20%;
+	}
+}

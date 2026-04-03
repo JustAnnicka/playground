@@ -63,6 +63,7 @@ a {
   padding: 5px;
   height: 48px;
   min-width: 48px;
+  width: 100%;
   font-size: 12px;
   margin: 5px;
   border-radius: 5px;
@@ -82,27 +83,73 @@ a {
   background-color: #606060;
 }
 
-.PopUp {
-  /*display: grid;
-  	grid-template-columns: subgrid;
-  grid-gap: 10px;
-   	grid-column: auto / span 3; */
-  background-color: #606060;
+.ClosePopupBtn {
+  grid-column: auto/span 1;
+  padding: 5px;
+  height: 32px;
+  min-width: 32px;
+  font-size: 12px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1.5px solid #202020;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+@media (min-width: 200px) {
+  .PopUp {
+    width: 80%;
+    height: 70vh;
+    position: absolute;
+    left: 8%;
+    top: 15%;
+    background-color: #606060;
+    padding: 8px;
+    border-radius: 15px;
+    margin: auto;
+    overflow: scroll;
+  }
+  input {
+    height: 20px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    background-color: #909090;
+  }
+  input[type=range] {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .sliderLabels {
+    display: flex;
+    place-content: space-between;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+@media (min-width: 30em) {
+  .PopUp {
+    max-width: 50%;
+    min-width: 30%;
+    left: 30%;
+    top: 20%;
+  }
+}
+.flexColumn {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 8px;
-  border-radius: 15px;
-  max-width: 50%;
-  margin: auto;
-  left: 20%;
-  top: 20%;
+  height: 85%;
+}
+
+.headerPopup {
+  display: flex;
+  flex-direction: row;
+  place-content: space-between;
+  align-items: flex-start;
 }
 
 .Row_10 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   gap: 10px;
   flex-basis: 100%;
 }
@@ -121,11 +168,6 @@ a {
 
 .Box_6 {
   flex-basis: 60%;
-}
-
-.Box_5 {
-  flex-basis: 49%;
-  flex-shrink: 2;
 }
 
 .Box_4 {
@@ -161,23 +203,34 @@ a {
   grid-column: auto/span 3;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 200px) {
   /* The grid system goes here... */
   .grid {
     height: 100vh;
+    padding: 8px;
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
     grid-column-gap: 0.75px;
     grid-row-gap: 0.45px;
   }
-  /* .div1 { grid-area: 2 / 3 / 3 / 4; }
-  	.div2 { grid-area: 2 / 4 / 3 / 5; }
-  	.div3 { grid-area: 1 / 6 / 2 / 7; }
-  	.div4 { grid-area: 3 / 6 / 4 / 7; }
-  	.div5 { grid-area: 3 / 5 / 4 / 6; } */
-  .parent {
-    display: grid;
+  .grid-center {
+    align-self: center;
+    grid-area: 2/1/3/2;
+  }
+  .grid-bottom-center {
+    grid-area: 3/1/4/2;
+    place-self: center;
+  }
+  .grid-top-center {
+    display: flex;
+    flex-direction: row-reverse;
+    place-content: space-between;
+    grid-area: 1/1/2/2;
+  }
+}
+@media (min-width: 30em) {
+  .grid {
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 5fr 1fr;
     grid-column-gap: 0.75px;
@@ -185,7 +238,7 @@ a {
   }
   .grid-top-right {
     grid-area: 1/3/2/4;
-    place-self: center;
+    text-align: right;
   }
   .grid-center {
     grid-area: 2/2/3/3;
@@ -197,12 +250,5 @@ a {
   }
   .grid-top-left {
     grid-area: 1/1/2/2;
-    place-self: center stretch;
   }
-  /* 	.row {
-  		display: grid;
-  	grid-template-columns: repeat(6, 1fr);
-  	grid-template-rows: repeat(1, 1fr 1fr 1fr);
-  	column-gap: 0.75em;
-  	} */
 }/*# sourceMappingURL=style.css.map */
