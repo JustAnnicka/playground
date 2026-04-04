@@ -98,7 +98,6 @@ a {
 @media (min-width: 200px) {
   .PopUp {
     width: 80%;
-    height: 70vh;
     position: absolute;
     left: 8%;
     top: 15%;
