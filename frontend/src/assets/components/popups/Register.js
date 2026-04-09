@@ -8,9 +8,18 @@
 	// -> check if new password fullfills the criteria
 	// -> check if the repeat password is identical to new password
 	// -> create new user with the given inputs and open 2.0 Auth verification.
-
-export default function GameConfig(){
+function handleSubmit(e) {
+    e.preventDefault();
+    alert();
+  }
+export default function GameConfig({showPopUp, closePopUp, title}){
+	if (!showPopUp) {return null}
 	return (
+		<form className="PopUp" onSubmit={handleSubmit} >
+			<div className="headerPopup">
+        		<h3> {title}</h3>
+        	    <button className="ClosePopupBtn" onClick={closePopUp}>X</button>
+			</div>
 			<div className="flexColumn">
 				<label for="username">username</label>
 				<input id="username" name="username" type="text" placeholder="username" />
@@ -22,6 +31,7 @@ export default function GameConfig(){
 				<label>repeat password</label>
 				<input type="password"placeholder="repeat password"/>
 				<input className="DefaultBtn" type="submit" value="Sign up"/>
-		</div>
+			</div>
+		</form>
 		)
 }

@@ -14,7 +14,7 @@ export default function CreateGame (data){
     const loadData = async () => {
       setLoading(true);
       
-      // Simulate network delay (optional, remove if you want instant load)
+    
       setTimeout(() => {
 		console.log("Raw Data Loaded:", cardsData); // <-
         setCards(cardsData); // Assign the imported JSON data
