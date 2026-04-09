@@ -1,28 +1,11 @@
-.GradientBG {
-  background: radial-gradient(circle, rgb(245, 161, 245) 2%, rgb(36, 14, 46) 100%);
-}
-
 .Overlay {
   background-color: black;
   opacity: 100%;
 }
 
-/* #root{
-	height: 100vh;
-} */
 body {
-  /* display: grid;
-  grid-template-columns: 1fr; */
   font-family: Arial, sans-serif;
-  /*grid-template-columns:
-      2  1fr
-     /* 1 * auto
-     /* 2 * 1fr;
-   	grid-template-rows:
-     /* 3 * auto
-     /* 4 * 1fr
-     /* 5 * auto;*/
-  background-color: #909090;
+  background-color: #081D27;
 }
 
 h1 {
@@ -54,7 +37,7 @@ p {
 }
 
 a {
-  color: #202020;
+  color: #516975;
   margin-right: 5px;
 }
 
@@ -67,20 +50,37 @@ a {
   font-size: 12px;
   margin: 5px;
   border-radius: 5px;
-  border: 1.5px solid #202020;
-  background-color: rgba(255, 255, 255, 0.03);
+  border: 1.5px solid #223843;
+  background-color: #516975;
+  box-shadow: -1px 1px 1px 1px rgba(81, 105, 117, 0.5);
 }
 
 .DefaultBtn:active {
   color: #202020;
   border: 1.5px solid #202020;
-  background-color: #606060;
+  background-color: #223843;
 }
 
 .DefaultBtn:hover {
-  color: #202020;
-  border: 1.5px solid #202020;
-  background-color: #606060;
+  box-shadow: -1px 1px 1px 1px rgba(36, 76, 53, 0.5);
+  border: 1.5px solid #244C35;
+  background-color: #244C35;
+}
+
+.CardBtn {
+  text-align: left;
+  height: 24px;
+  border: 1px solid #202020;
+  background-color: rgba(255, 255, 255, 0.03);
+  margin-bottom: 8px;
+}
+
+.CardBtn:hover {
+  border: 1px solid white;
+}
+
+.CardBtn:active {
+  background-color: #223843;
 }
 
 .ClosePopupBtn {
@@ -97,15 +97,19 @@ a {
 
 @media (min-width: 200px) {
   .PopUp {
+    color: #223843;
     width: 80%;
     position: absolute;
     left: 8%;
     top: 15%;
-    background-color: #606060;
+    background-color: #516975;
+    background-color: #CDDDE5;
     padding: 8px;
     border-radius: 15px;
     margin: auto;
     overflow: scroll;
+    z-index: 5;
+    box-shadow: 0px 0px 26px 10px rgba(0, 0, 0, 0.5);
   }
   input {
     height: 20px;
@@ -139,6 +143,24 @@ a {
   height: 85%;
 }
 
+.Header {
+  display: flex;
+  flex-direction: row;
+  place-content: space-between;
+  align-items: flex-start;
+  position: sticky;
+  top: 0;
+}
+
+.Footer {
+  height: 16px;
+  font-size: 12px;
+  color: white;
+  position: sticky;
+  bottom: 3px;
+  text-align: center;
+}
+
 .headerPopup {
   display: flex;
   flex-direction: row;
@@ -151,55 +173,6 @@ a {
   flex-direction: row;
   gap: 10px;
   flex-basis: 100%;
-}
-
-.Box_10 {
-  flex-basis: 100%;
-}
-
-.Box_9 {
-  flex-basis: 90%;
-}
-
-.Box_8 {
-  flex-basis: 80%;
-}
-
-.Box_6 {
-  flex-basis: 60%;
-}
-
-.Box_4 {
-  flex-basis: 40%;
-}
-
-.Box_3 {
-  flex-basis: 30%;
-}
-
-.Box_2 {
-  flex-basis: 2%;
-}
-
-.Box_1 {
-  flex-basis: 9%;
-  flex-shrink: 1;
-}
-
-.grid-sixth {
-  grid-column: auto/span 1;
-}
-
-.grid-third {
-  grid-column: auto/span 2;
-}
-
-.grid-two-thirds {
-  grid-column: auto/span 4;
-}
-
-.grid-half {
-  grid-column: auto/span 3;
 }
 
 @media (min-width: 200px) {
@@ -217,16 +190,6 @@ a {
     align-self: center;
     grid-area: 2/1/3/2;
   }
-  .grid-bottom-center {
-    grid-area: 3/1/4/2;
-    place-self: center;
-  }
-  .grid-top-center {
-    display: flex;
-    flex-direction: row-reverse;
-    place-content: space-between;
-    grid-area: 1/1/2/2;
-  }
 }
 @media (min-width: 30em) {
   .grid {
@@ -235,19 +198,15 @@ a {
     grid-column-gap: 0.75px;
     grid-row-gap: 0.45px;
   }
-  .grid-top-right {
-    grid-area: 1/3/2/4;
-    text-align: right;
-  }
   .grid-center {
     grid-area: 2/2/3/3;
     align-self: center;
   }
-  .grid-bottom-center {
-    grid-area: 3/2/4/3;
-    place-self: center;
-  }
-  .grid-top-left {
-    grid-area: 1/1/2/2;
-  }
+}
+.card-table {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  height: 100%;
+  display: flex;
+  gap: 10px;
 }/*# sourceMappingURL=style.css.map */

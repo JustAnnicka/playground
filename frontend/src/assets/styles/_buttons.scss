@@ -10,8 +10,10 @@
 	font-size : 12px;
 	margin: 5px;
 	border-radius: 5px;
-	border: 1.5px solid base.$secondary-color;
-	background-color: base.$glass-bg;
+	border: 1.5px solid base.$primary-color;
+	background-color: base.$light-color;
+	-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.5); 
+	box-shadow: -1px 1px 1px 1px rgba(81, 105, 117, 0.5);
 }
 .DefaultBtn:active{
 	color: base.$secondary-color;
@@ -19,8 +21,23 @@
 	background-color: base.$primary-color;
 }
 .DefaultBtn:hover{
-	color: base.$secondary-color;
-	border: 1.5px solid base.$secondary-color;
+	box-shadow: -1px 1px 1px 1px rgba(36, 76, 53, 0.5);
+	border: 1.5px solid base.$green-color;
+	background-color: base.$green-color;
+}
+
+.CardBtn{
+	text-align: left;
+	height: 24px;
+	border: 1px solid base.$secondary-color;
+	background-color: base.$glass-bg;
+	margin-bottom: 8px;
+}
+
+.CardBtn:hover{
+	border: 1px solid white;	
+}
+.CardBtn:active{
 	background-color: base.$primary-color;
 }
 

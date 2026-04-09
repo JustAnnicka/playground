@@ -1,4 +1,3 @@
-
 const Imprint = () => { 
 	return ( 
 		<div className="Imprint"> 
